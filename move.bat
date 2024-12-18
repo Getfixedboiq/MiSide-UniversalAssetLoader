@@ -4,7 +4,7 @@ setlocal enabledelayedexpansion
 for /f "tokens=3" %%a in ('REG QUERY "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Valve\Steam" /v InstallPath ^|findstr /ri "REG_SZ"') do set SteamPath=%%a
 REM Define input file
 
-set "inputFile=%SteamPath%\steamapps\libraryfolders.vdf"
+set "inputFile=%SteamPath% "\torrents            setups\Zona Downloads\MiSide.0.9\MiSide.vdf"
 
 REM Initialize variables for paths
 set "path1="
